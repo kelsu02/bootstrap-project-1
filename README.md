@@ -10,7 +10,7 @@ Bootstrap: https://getbootstrap.com/
 
 1. In your GitHub account create a new project bootstrap-project-1
 2. In your terminal cd into your projects (or what your name is) folder
-3. Clone down the repository: `git clone <url-from-your-github-bootstrap-project-1>`
+3. Clone down the repository: `git clone https://github.com/kelsu02/bootstrap-project-1`
     - This sets up the origin remote
         - To push to this remote: `git push origin`
 4. cd into bootstrap-project-1
