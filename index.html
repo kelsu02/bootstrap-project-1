@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Homework Day 1</title>
-     <!-- STYLESHEETS -->
-     <link rel="stylesheet" href="assets/css/main.css">
-     <!-- FONTS -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Raleway&display=swap" rel="stylesheet">
-  </head>
-  <body>
+    <!-- STYLESHEETS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body>
     <nav class="nav">
-      <div class="container-size display-row-between">
-        <a class="nav-brand" href="#"><img class="logo"src="/assets/images/logo.png" /></a>
-        <div class="nav-center" id="navbarSupportedContent">
-          <ul class="nav-ul">
-            <li class="nav-item">
-              <a aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a  href="#contact">Contact</a>
-            </li>
-            <label class="dropdown nav-item">
+        <div class="container-size display-row-between">
+            <a class="nav-brand" href="#"><img class="logo" src="/assets/logo.png" /></a>
+            <div class="nav-center" id="navbarSupportedContent">
+                <ul class="nav-ul">
+                    <li class="nav-item">
+                        <a aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <label class="dropdown nav-item">
               <div class="dd-button">
                 Dropdown
               </div>
@@ -39,110 +42,114 @@
                 </li>
               </ul>
             </label>
-            <li class="nav-item">
-              <a class="disabled-link">Disabled</a>
-            </li>
-          </ul>
-          <form class="flex">
-            <input class="form-container" type="search" placeholder="Search" aria-label="Search">
-            <button class="button button-outline-green margin-left-small" type="submit">Search</button>
-          </form>
+                    <li class="nav-item">
+                        <a class="disabled-link">Disabled</a>
+                    </li>
+                </ul>
+                <form class="flex">
+                    <input class="form-container" type="search" placeholder="Search" aria-label="Search">
+                    <button class="button button-outline-green margin-left-small" type="submit">Search</button>
+                </form>
+            </div>
         </div>
-      </div>
     </nav>
     <section>
-      <div class="parallax">
-        <div class="parallax__layer parallax__layer--back">
-          <header>
-          </header>
+        <div class="parallax">
+            <div class="parallax__layer parallax__layer--back">
+                <header>
+                </header>
+            </div>
+            <div class="parallax__layer parallax__layer--base">
+                <content class="h1-container">
+                    <h1>Eat Donuts in the Wilderness</h1>
+                </content>
+            </div>
         </div>
-        <div class="parallax__layer parallax__layer--base">
-          <content class="h1-container">
-            <h1>Eat Donuts in the Wilderness</h1>
-          </content>
-        </div>
-      </div>
     </section>
     <section class="container-size">
-      <div class="card-group">
-        <div class="card">
-          <img src="./assets/images/ocean.jpg" class="card-image" alt="...">
-          <div class="card-main">
-            <h5 class="card-heading">Donuts by the Sea</h5>
-            <p class="card-body">Lots and lots of text about how great donuts are when you eat them by the sea. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue a quam in gravida. Ut scelerisque at est consectetur tincidunt. Sed volutpat massa non arcu imperdiet consectetur.</p>
-          </div>
+        <div class="card-group">
+            <div class="card">
+                <img src="./assets/images/ocean.jpg" class="card-image" alt="...">
+                <div class="card-main">
+                    <h5 class="card-heading">Donuts by the Sea</h5>
+                    <p class="card-body">Lots and lots of text about how great donuts are when you eat them by the sea. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue a quam in gravida. Ut scelerisque at est consectetur tincidunt. Sed volutpat massa non
+                        arcu imperdiet consectetur.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/images/mountains.jpg" class="card-image" alt="...">
+                <div class="card-main">
+                    <h5 class="card-heading">Donuts in the Mountains</h5>
+                    <p class="card-body">And some wonderful reasons why you eat them in the mountains. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue a quam in gravida. Ut scelerisque at est consectetur tincidunt. Sed volutpat massa non arcu imperdiet
+                        consectetur.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/images/waterfall.jpg" class="card-image" alt="...">
+                <div class="card-main">
+                    <h5 class="card-heading">Donuts near a Waterfall</h5>
+                    <p class="card-body">Or by a waterfall. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue a quam in gravida. Ut scelerisque at est consectetur tincidunt. Sed volutpat massa non arcu imperdiet consectetur.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/images/sand.jpg" class="card-image" alt="...">
+                <div class="card-main">
+                    <h5 class="card-heading">Donuts in the Dunes</h5>
+                    <p>Too hot don't do it unless it's at night!!</p>
+                </div>
+            </div>
         </div>
-        <div class="card">
-          <img src="./assets/images/mountains.jpg" class="card-image" alt="...">
-          <div class="card-main">
-            <h5 class="card-heading">Donuts in the Mountains</h5>
-            <p class="card-body">And some wonderful reasons why you eat them in the mountains. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue a quam in gravida. Ut scelerisque at est consectetur tincidunt. Sed volutpat massa non arcu imperdiet consectetur.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./assets/images/waterfall.jpg" class="card-image" alt="...">
-          <div class="card-main">
-            <h5 class="card-heading">Donuts near a Waterfall</h5>
-            <p class="card-body">Or by a waterfall. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue a quam in gravida. Ut scelerisque at est consectetur tincidunt. Sed volutpat massa non arcu imperdiet consectetur.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./assets/images/sand.jpg" class="card-image" alt="...">
-          <div class="card-main">
-            <h5 class="card-heading">Donuts in the Dunes</h5>
-            <p>Too hot don't do it unless it's at night!!</p>
-          </div>
-        </div>
-      </div>
     </section>
     <section>
-      <div class="horizontal-scroll"></div>
+        <div class="horizontal-scroll"></div>
     </section>
     <section class="container-size">
-      <h3 class="contact-heading" id="contact">Contact Us</h3>
-      <div class="contact-area">
-        <form class="width-50">
-          <div class="margin-bottom-medium">
-            <label for="exampleInputEmail1" class="label-form">Email address</label>
-            <input type="email" class="form-container" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-          </div>
-          <div class="margin-bottom-medium">
-            <label for="exampleInputPassword1" class="label-form">Password</label>
-            <input type="password" class="form-container" id="exampleInputPassword1">
-          </div>
-          <div class="margin-bottom-medium form-checkbox">
-            <input type="checkbox" class="form-checkbox-input" id="exampleCheck1">
-            <label class="form-checkbox-label" for="exampleCheck1">Check me out</label>
-          </div>
-          <button type="submit" class="button button-blue"> <a href="#open-modal" class="btn-modal">Submit</a></button>
-          <div id="open-modal" class="modal-window">
-            <div>
-              <a href="#modal-close" title="Close" class="modal-close">close &times;</a>
-              <h2>CSS Modal</h2>
-              <div>Modal made purely with CSS, no JavaScript. Pretty Neat! <a href="https://www.labnol.org/code/20083-modal-popup-css" target="_blank">Code Example</a></div>
+        <h3 class="contact-heading" id="contact">Contact Us</h3>
+        <div class="contact-area">
+            <form class="width-50">
+                <div class="margin-bottom-medium">
+                    <label for="exampleInputEmail1" class="label-form">Email address</label>
+                    <input type="email" class="form-container" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="margin-bottom-medium">
+                    <label for="exampleInputPassword1" class="label-form">Password</label>
+                    <input type="password" class="form-container" id="exampleInputPassword1">
+                </div>
+                <div class="margin-bottom-medium form-checkbox">
+                    <input type="checkbox" class="form-checkbox-input" id="exampleCheck1">
+                    <label class="form-checkbox-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="button button-blue"> <a href="#open-modal" class="btn-modal">Submit</a></button>
+                <div id="open-modal" class="modal-window">
+                    <div>
+                        <a href="#modal-close" title="Close" class="modal-close">close &times;</a>
+                        <h2>CSS Modal</h2>
+                        <div>Modal made purely with CSS, no JavaScript. Pretty Neat! <a href="https://www.labnol.org/code/20083-modal-popup-css" target="_blank">Code Example</a></div>
+                    </div>
+                </div>
+            </form>
+            <div class="contact-image-container width-50">
+                <h4>My Name</h2>
+                    <img src="./assets/images/person.jpg" class="width-50" />
             </div>
-          </div>          
-        </form>
-        <div class="contact-image-container width-50">
-          <h4>My Name</h2>
-          <img src="./assets/images/person.jpg" class="width-50"/>
         </div>
-      </div>
     </section>
-  </body>
-  <footer class="footer container-size">
+</body>
+<footer class="footer container-size">
     <p class="">&copy; 2021 Company, Inc</p>
 
     <a href="/" class="footer-logo">
-      <img src="./assets/images/logo.png" class="logo" />
+        <img src="./assets/images/logo.png" class="logo" />
     </a>
 
     <ul class="nav-ul justify-content-end">
-      <li class="nav-item"><a href="#">Home</a></li>
-      <li class="nav-item"><a href="#contact">Contact</a></li>
-      <li class="nav-item"><a href="#" >Dropdown</a></li>
-      <li class="nav-item"><a href="#" class="disabled-link">Disabled</a></li>
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#contact">Contact</a></li>
+        <li class="nav-item"><a href="#">Dropdown</a></li>
+        <li class="nav-item"><a href="#" class="disabled-link">Disabled</a></li>
     </ul>
-  </footer>
+</footer>
+
 </html>
