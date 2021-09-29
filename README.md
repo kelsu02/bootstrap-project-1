@@ -1,6 +1,6 @@
 # Bootstrap Project 1
 
-The challenge is to take the custom css and replace it with bootstrap classes. There may be elements that cannot be replaced just to make you think. I will do a code review with each of you the following day.
+The challenge is to take the custom css and replace it with bootstrap classes. There may be elements that cannot be replaced just to make you think. I will do a code review with each of you after you push up your `develop-<your-name-here>` branch.
 
 Bootstrap: https://getbootstrap.com/
 
