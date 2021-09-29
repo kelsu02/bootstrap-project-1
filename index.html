@@ -19,7 +19,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-size display-row-between">
+      <div class="container display-row-between">
         <a class="nav-brand" href="#">
           <img 
             class="" width="125" height="75"
@@ -71,7 +71,7 @@
       </div>
     </section>
     <section class="container">
-      <div class="row row-cols-2 justify-content-evenly">
+      <div class="row row-cols-2 justify-content-evenly align-content-around">
           <div class="card">
             <img src="./assets/images/ocean.jpg" class="card-image card-img-top" alt="...">
             <div class="card-body">
@@ -105,10 +105,10 @@
     <section>
       <div class="horizontal-scroll"></div>
     </section>
-    <section class="container-size">
-      <h3 class="contact-heading" id="contact">Contact Us</h3>
-      <div class="contact-area">
-        <form class="width-50">
+    <section class="container">
+      <h3 class="row align-items-center justify-content-center" id="contact">Contact Us</h3>
+      <div class="row align-items-center justify-content-between">
+        <form class="col">
           <div class="margin-bottom-medium">
             <label for="exampleInputEmail1" class="label-form">Email address</label>
             <input type="email" class="form-container" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -122,16 +122,27 @@
             <input type="checkbox" class="form-checkbox-input" id="exampleCheck1">
             <label class="form-checkbox-label" for="exampleCheck1">Check me out</label>
           </div>
-          <button type="submit" class="button button-blue"> <a href="#open-modal" class="btn-modal">Submit</a></button>
-          <div id="open-modal" class="modal-window">
-            <div>
-              <a href="#modal-close" title="Close" class="modal-close">close &times;</a>
-              <h2>CSS Modal</h2>
-              <div>Modal made purely with CSS, no JavaScript. Pretty Neat! <a href="https://www.labnol.org/code/20083-modal-popup-css" target="_blank">Code Example</a></div>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">
+            Submit
+          </button>
+          <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalLabel">CSS Modal</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Modal made  with Bootstrap. Pretty Neat!
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
             </div>
           </div>          
         </form>
-        <div class="contact-image-container width-50">
+        <div class="col">
           <h4>My Name</h2>
           <img src="./assets/images/person.jpg" class="width-50"/>
         </div>

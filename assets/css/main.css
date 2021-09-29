@@ -309,20 +309,21 @@ h4 {
   flex-flow: row wrap;
   margin-top: 4rem;
   justify-content: space-between;
-}
+} */
 
 .card {
   width: 45%;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0,0,0,.125);
-  border-radius: .25rem;
+  border-radius: .25rem; */
+  margin-top: 2rem;
   margin-bottom: 2rem;
-} */
+}
 
 .card-image {
   width: 100%;
@@ -366,28 +367,28 @@ h4 {
 }
 
 /* Contact */
-.contact-heading {
+/* .contact-heading {
   display: flex;
   justify-content: center;
   margin: 2rem 0;
-}
+} */
 
-.contact-area {
+/* .contact-area {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
 .width-50 {
   width: 50%;
 }
 
-.contact-image-container {
+/* .contact-image-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
 /* Form  */
 .form-container {
@@ -540,3 +541,5 @@ label {
 .footer .nav-ul {
   margin-right: 0;
 } */
+
+/* My css is below */
