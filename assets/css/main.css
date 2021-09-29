@@ -56,25 +56,25 @@ h4 {
   width: 100%;
 }
 
-.container-size {
+/* .container-size {
   width: 95%;
   padding-right: var(--bs-gutter-x,.75rem);
   padding-left: var(--bs-gutter-x,.75rem);
   margin-right: auto;
   margin-left: auto;
-}
+} */
 
-.flex {
+/* .flex {
   display: flex;
-}
+} */
 
-.display-row-between {
+/* .display-row-between {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
+} */
 
-.button {
+/* .button {
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
@@ -96,14 +96,14 @@ h4 {
   font-size: 1rem;
   border-radius: .25rem;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
+} */
 
-.button-outline-green {
+/* .button-outline-green {
   color: #198754;
   border-color: #198754;
-}
+} */
 
-.button-outline-green:hover {
+/* .button-outline-green:hover {
   color: #fff;
   background-color: #198754;
   border-color: #198754;
@@ -127,7 +127,7 @@ h4 {
 
 .margin-bottom-medium {
   margin-bottom: 1rem;
-}
+} */
 
 /* NavBar */
 /* .nav {
@@ -312,7 +312,7 @@ h4 {
 } */
 
 .card {
-  width: 45%;
+  width: 49%;
   /* display: flex;
   flex-direction: column;
   min-width: 0;
@@ -321,8 +321,8 @@ h4 {
   background-clip: border-box;
   border: 1px solid rgba(0,0,0,.125);
   border-radius: .25rem; */
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .card-image {
@@ -379,9 +379,6 @@ h4 {
   align-items: center;
 } */
 
-.width-50 {
-  width: 50%;
-}
 
 /* .contact-image-container {
   display: flex;
@@ -391,7 +388,7 @@ h4 {
 } */
 
 /* Form  */
-.form-container {
+/* .form-container {
   display: block;
   width: 100%;
   padding: .375rem .75rem;
@@ -407,9 +404,9 @@ h4 {
   appearance: none;
   border-radius: .25rem;
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
+} */
 
-label {
+/* label {
   display: inline-block;
 }
 
@@ -459,12 +456,12 @@ label {
 
 .form-checkbox-input:checked[type="checkbox"] {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
-}
+} */
 
 
 
 /* Modal */
-.modal-window {
+/* .modal-window {
   position: fixed;
   background-color: rgba(200, 200, 200, 0.75);
   top: 0;
@@ -521,7 +518,7 @@ label {
 .btn-modal {
   color: white;
   text-decoration: none;
-}
+} */
 
 /* Footer */
 /* .footer {
@@ -543,3 +540,7 @@ label {
 } */
 
 /* My css is below */
+.container {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
