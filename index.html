@@ -7,13 +7,50 @@
     <title>Bootstrap Homework Day 1</title>
      <!-- STYLESHEETS -->
      <link rel="stylesheet" href="assets/css/main.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
      <!-- FONTS -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Raleway&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav class="nav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="assets/images/logo.png" width="130"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="https:www.arrayschool.com">arrayschool</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- <nav class="nav justify-content-start">
       <div class="container-size display-row-between">
         <a class="nav-brand" href="#"><img class="logo"src="/assets/images/logo.png" /></a>
         <div class="nav-center" id="navbarSupportedContent">
@@ -49,7 +86,7 @@
           </form>
         </div>
       </div>
-    </nav>
+    </nav> -->
     <section>
       <div class="parallax">
         <div class="parallax__layer parallax__layer--back">
@@ -63,7 +100,57 @@
         </div>
       </div>
     </section>
-    <section class="container-size">
+    <div class="container-md" >
+      <div class="row justify-content-center">
+        <div class="col">
+          Column
+          <div class="card" style="width: 18rem;">
+            <img src="assets/images/ocean.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Donuts by the Sea</h5>
+              <p class="card-text">Lots and lots of text about how great donuts are when you eat them by the sea. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue a quam in gravida. Ut scelerisque at est consectetur tincidunt. Sed volutpat massa non arcu imperdiet consectetur.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          Column
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/images/mountains.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Donuts in the Mountains</h5>
+              <p class="card-text">And some wonderful reasons why you eat them in the mountains. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue a quam in gravida. Ut scelerisque at est consectetur tincidunt. Sed volutpat massa non arcu imperdiet consectetur.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center" >
+        <div class="col">
+          Column
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/images/waterfall.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Donuts near a Waterfall</h5>
+              <p class="card-text">Or by a waterfall. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue a quam in gravida. Ut scelerisque at est consectetur tincidunt. Sed volutpat massa non arcu imperdiet consectetur.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" >
+          Column
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/images/sand.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Donuts in the Dunes</h5>
+              <p class="card-text">Too hot don't do it unless it's at night!!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    
+    
+    
+    <!-- <section class="container-size">
       <div class="card-group">
         <div class="card">
           <img src="./assets/images/ocean.jpg" class="card-image" alt="...">
@@ -94,7 +181,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <section>
       <div class="horizontal-scroll"></div>
     </section>
@@ -130,6 +217,7 @@
         </div>
       </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   </body>
   <footer class="footer container-size">
     <p class="">&copy; 2021 Company, Inc</p>
