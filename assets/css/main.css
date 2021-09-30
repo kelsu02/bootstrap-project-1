@@ -282,9 +282,56 @@ h4 {
 }
 
 
+/* Header Parallax Element Style*/
+
+.paral {
+    min-height: 80vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+
+/* Paragraph for Parallax Section */
+
+
+/* .paral p {
+    font-size: 200%;
+    /*color:#f5f5f5;
+    text-align: center;
+    line-height: 60px;
+} */
+
+
+/* Heading for Parallax Section */
+
+.paral h1 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 60px;
+    text-align: center;
+    padding-top: 60px;
+    line-height: 100px;
+}
+
+
+/* Image for Parallax Section */
+
+.paralsec {
+    background-image: url("../images/timetraveler.jpg");
+}
+
+
+/* Remove Bottom Margin from Jumbotron */
+
+.jumbotron {
+    margin-bottom: 0;
+}
+
+
 /* PARALLAX CSS */
 
-.parallax {
+
+/* .parallax {
     height: 80vh;
     font-size: 200%;
     overflow-x: hidden;
@@ -319,7 +366,7 @@ h4 {
     position: relative;
     height: 80vh;
     transform-style: preserve-3d;
-}
+} */
 
 
 /* Cards */
@@ -364,7 +411,8 @@ h4 {
 
 /* Animated Horizontal Scroll  */
 
-.horizontal-scroll {
+
+/* .horizontal-scroll {
     height: 583px;
     max-height: 600px;
     width: 100vw;
@@ -374,6 +422,13 @@ h4 {
     background-position: 0 10%, 0 70%, center, bottom, top;
     background-size: 500px, 800px, 800px, 800px, 1800px 340px;
     animation: 50s para infinite linear;
+} */
+
+
+/* CSS used here will be applied after bootstrap.css */
+
+.col-md-4 {
+    padding: 0;
 }
 
 @keyframes para {
