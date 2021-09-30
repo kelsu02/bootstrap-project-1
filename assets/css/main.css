@@ -368,6 +368,12 @@ h4 {
     transform-style: preserve-3d;
 } */
 
+@keyframes para {
+    100% {
+        background-position: -5000px 20%, -800px 95%, 500px 50%, 1000px 100%, 400px 0;
+    }
+}
+
 
 /* Cards */
 
@@ -411,8 +417,7 @@ h4 {
 
 /* Animated Horizontal Scroll  */
 
-
-/* .horizontal-scroll {
+.horizontal-scroll {
     height: 583px;
     max-height: 600px;
     width: 100vw;
@@ -422,20 +427,22 @@ h4 {
     background-position: 0 10%, 0 70%, center, bottom, top;
     background-size: 500px, 800px, 800px, 800px, 1800px 340px;
     animation: 50s para infinite linear;
-} */
+}
 
 
 /* CSS used here will be applied after bootstrap.css */
 
-.col-md-4 {
-    padding: 0;
+
+/* .addons {
+    min-height: 583en;
+    max-height: 600en;
+    width: 100vw;
+    background-color: hsla(200, 40%, 30%, .4)
 }
 
-@keyframes para {
-    100% {
-        background-position: -5000px 20%, -800px 95%, 500px 50%, 1000px 100%, 400px 0;
-    }
-}
+.col-md-5 {
+    padding: 0;
+} */
 
 
 /* Contact */
