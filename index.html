@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Homework Day 1</title>
      <!-- STYLESHEETS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
      <link rel="stylesheet" href="assets/css/main.css">
      <!-- FONTS -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,39 +14,39 @@
      <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Raleway&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav class="nav">
-      <div class="container-size display-row-between">
-        <a class="nav-brand" href="#"><img class="logo"src="/assets/images/logo.png" /></a>
-        <div class="nav-center" id="navbarSupportedContent">
-          <ul class="nav-ul">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="logo"src="/assets/images/logo.png" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a  href="#contact">Contact</a>
+              <a  class="nav-link" href="#contact">Contact</a>
             </li>
-            <label class="dropdown nav-item">
-              <div class="dd-button">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Dropdown
-              </div>
-              <input type="checkbox" class="dd-input" id="test">              
-              <ul class="dd-menu">
-                <li>Action</li>
-                <li>Another action</li>
-                <li>Something else here</li>
-                <li class="divider"></li>
-                <li>
-                  <a href="https://www.arrayschool.com/" target="_blank">Link to Array</a>
-                </li>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
-            </label>
+            </li>
             <li class="nav-item">
-              <a class="disabled-link">Disabled</a>
+              <a class="nav-link disabled">Disabled</a>
             </li>
           </ul>
-          <form class="flex">
-            <input class="form-container" type="search" placeholder="Search" aria-label="Search">
-            <button class="button button-outline-green margin-left-small" type="submit">Search</button>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
         </div>
       </div>
@@ -63,7 +64,7 @@
         </div>
       </div>
     </section>
-    <section class="container-size">
+    <!-- <section class="container-size">
       <div class="card-group">
         <div class="card">
           <img src="./assets/images/ocean.jpg" class="card-image" alt="...">
@@ -94,14 +95,46 @@
           </div>
         </div>
       </div>
+    </section> -->
+    <section class="container">
+      <div class="row align-items-center">
+        <div class="card col-md-3">
+          <img src="./assets/images/ocean.jpg" class="card-img-top" alt="ocean">
+          <div class="card-body">
+            <h5 class="card-title">Donuts by the Sea</h5>
+            <p class="card-text">Lots and lots of text about how great donuts are when you eat them by the sea. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue a quam in gravida. Ut scelerisque at est consectetur tincidunt. Sed volutpat massa non arcu imperdiet consectetur.</p>
+          </div>
+        </div>
+        <div class="card col-md-3">
+          <img src="./assets/images/mountains.jpg" class="card-img-top" alt="mountians">
+          <div class="card-body">
+            <h5 class="card-title">Donuts in the Mountains</h5>
+            <p class="card-text">And some wonderful reasons why you eat them in the mountains.. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue a quam in gravida. Ut scelerisque at est consectetur tincidunt. Sed volutpat massa non arcu imperdiet consectetur.</p>
+          </div>
+        </div>
+        <div class="card col-md-3">
+          <img src="./assets/images/waterfall.jpg" class="card-img-top" alt="waterfall">
+          <div class="card-body">
+            <h5 class="card-title">Donuts near a Waterfall</h5>
+            <p class="card-text">Or by a waterfall. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue a quam in gravida. Ut scelerisque at est consectetur tincidunt. Sed volutpat massa non arcu imperdiet consectetur.</p>
+          </div>
+        </div>
+        <div class="card col-md-3">
+          <img src="./assets/images/sand.jpg" class="card-img-top" alt="sand">
+          <div class="card-body">
+            <h5 class="card-title">Donuts in the Dunes</h5>
+            <p class="card-text">Too hot don't do it unless it's at night!!</p>
+          </div>
+        </div>
+      </div>
     </section>
     <section>
       <div class="horizontal-scroll"></div>
     </section>
-    <section class="container-size">
+    <section class="container">
       <h3 class="contact-heading" id="contact">Contact Us</h3>
-      <div class="contact-area">
-        <form class="width-50">
+      <div class="row align-items-start">
+        <form class="col col-lg-6" >
           <div class="margin-bottom-medium">
             <label for="exampleInputEmail1" class="label-form">Email address</label>
             <input type="email" class="form-container" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -124,8 +157,8 @@
             </div>
           </div>          
         </form>
-        <div class="contact-image-container width-50">
-          <h4>My Name</h2>
+        <div class="col col-lg-6 right">
+          <h4 class="">My Name</h2>
           <img src="./assets/images/person.jpg" class="width-50"/>
         </div>
       </div>
@@ -145,4 +178,5 @@
       <li class="nav-item"><a href="#" class="disabled-link">Disabled</a></li>
     </ul>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </html>
